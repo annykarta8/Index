@@ -26,6 +26,9 @@ body {
     padding: 20px;
     margin-top: 10px;
 }
+.bar {
+    margin-top: 10px;
+}
 .welcome {
     background-color: honeydew;
     height: 300px;
@@ -76,7 +79,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     color: darkolivegreen;
-    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: honeydew;
     width: 200px;
     height: 50px;
@@ -85,23 +88,32 @@ body {
     align-items: center;
 }
 
-@media (min-width: 800px) {
-    .list img {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1250px) {
-    .list img {
-        width: 100%;
-    }
-}
-
 @media (max-width: 500px) {
     .list {
         flex-wrap: wrap;
     }
     .list img {
         width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    .item {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .list img {
+        width: 100%;
+    }
+    .bar {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    .list img {
+        width: 100%;
     }
 }
